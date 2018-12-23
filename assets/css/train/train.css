@@ -1,0 +1,32 @@
+form{
+    margin: 1em;
+}
+
+.card{
+    margin: 1em;
+}
+
+.card-title{
+    background-color: #0C82C5;
+    color: azure;
+    padding-left: 1em;
+    padding-top: 10px;
+    height: 50px;
+}
+
+.jumbotron-align{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: azure;
+}
+
+#jumbo{
+    background-image: url("../../images/train/DSC_9795.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#submit{
+    margin-top: 1em;
+}

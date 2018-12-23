@@ -1,0 +1,54 @@
+.navbar{
+    font-family: 'Anton', sans-serif;
+}
+
+#brando{
+    font-size: 2.5rem;
+}
+
+#profilepic{
+    width: 200px;
+    padding: 0px 20px 0px 0px;
+    float: left;
+}
+
+.headings{
+    font-family: 'Anton', sans-serif;
+}
+
+.portfolio_pics{
+    width: 300px;
+    /* height: 225px; */
+    margin: 10px;
+}
+
+.port_tags{
+    position: relative;
+    bottom: 70px;
+    width: 300px;
+    margin: auto;
+    font-family: 'Anton', sans-serif;
+    /* font-weight: normal; */
+	text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+	z-index: 10;
+
+}
+
+.social_icon {
+    width: 62px;
+    height: 62px;
+    margin-top: 8px;
+    align-items: center;
+}
+
+.d-block{
+    display: flex;
+    align-items: center;
+}
+
+.content{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

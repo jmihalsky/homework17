@@ -1,0 +1,55 @@
+body{
+    background: url("../../images/triviagame/rchp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    opacity: 0.7;
+    background-color: azure;
+    text-align: center;
+}
+
+.ques-space{
+    opacity: 1;
+}
+
+#submit{
+    display: none;
+    text-align: center;
+}
+
+#reset{
+    display: none;
+    text-align: center;
+}
+
+#lvl2{
+    display: none;
+}
+
+.sub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    font-family: 'Bangers', cursive;
+    color: #DC257E;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+label{
+    padding-left: 2px;
+    padding-right: 2px;
+}

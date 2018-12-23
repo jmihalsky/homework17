@@ -1,0 +1,39 @@
+body{
+    background: url("../../images/RPG/starwars-rpg-bckgrd.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Exo 2', sans-serif;
+}
+
+#game-title{
+    text-align: right;
+}
+
+.defeated{
+    display: none;
+}
+
+.avail{
+    border: 2px;
+    border-style: solid;
+    border-color: green;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.enemy{
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    background-color: red;
+    text-align: center;
+}
+
+.fighter{
+    border: 2px;
+    border-style: solid;
+    border-color: green;
+    background-color: black;
+    color: #FFFFFF;
+    text-align: center;
+}

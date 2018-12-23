@@ -1,0 +1,25 @@
+body{
+    /* @import url('https://fonts.googleapis.com/css?family=Aladin'); */
+    font-family: 'Aladin', cursive;
+}
+
+#msg{
+    text-align: center;
+    padding-top: 228px;
+    font-weight: bolder;
+    font-size: 2rem;
+    /* width: 300px; */
+}
+
+.crystal_wrapper{
+    /* background: url("../images/crystalball.jpg"); */
+    background: url("../../images/psychic/psychic02.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+}
+
+table{
+    width: 600px;
+    font-size: 25px;
+}

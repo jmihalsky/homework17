@@ -1,0 +1,51 @@
+header{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background-color: #16C0B0;
+}
+
+.container{
+    background-color: #ffffff;
+}
+
+.srch-btn{
+    margin: 10px;
+
+}
+
+.rating{
+    margin: 4px;
+}
+
+#gif-area{
+    margin-top: 1em;
+    display: inline-block;
+    position: relative;
+    float: left;
+}
+
+.giffy{
+    margin: 1em;
+    display: inline-block;
+    position: relative;
+    float: left;
+}
+
+footer{
+    height: 2em;
+    float: right;
+}
+
+#srch-opt{
+    margin-top: 2em;
+}
+
+#gif-form{
+    margin-top: 2em;
+}
+
+#rtn-num{
+    align: center
+}

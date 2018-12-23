@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework 03 - Jeff Mihalsky - Psychic</title>
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Aladin|Coming+Soon|Titillium+Web" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../css/psychic/gamestyle.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="../../javascript/wordguess/game.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-light navbar-expand-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="../../images/main/jm-logo.png" alt="logo">Psychic Game</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="navbar-item active">
+                            <a class="nav-link" href="../../../index.html" class="nav-link">Main Menu</a>
+                        </li>
+                        <li class="navbar-item active">
+                            <a class="nav-link" href="../../../index.html" target="#portfolio-trgt" class="nav-link">Portfolio</a>
+                        </li>
+                    </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div id="msg" class="col-xs-12 col-sm-12 col-md-12 crystal_wrapper"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-xs-12 col-sm-12 col-md-6">
+                <table class="table table-borderless">
+                    <tbody>
+                        <tr>
+                            <th>Wins:</th>
+                            <td class="text-center" id="wins"></td>
+                        </tr>
+                        <tr>
+                            <th>Losses:</th>
+                            <td class="text-center" id="losses"></td>
+                        </tr>
+                        <tr>
+                            <th>Guesses Left:</th>
+                            <td class="text-center" id="guesses_left"></td>
+                        </tr>
+                        <tr>
+                            <th>Your guesses so far:</th>
+                            <td class="text-center" id="guesses_ltr"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+    <footer></footer>
+    <script type="text/javascript">
+    var start_game = 0;
+    var start_key = "";
+    var val_key = "";
+
+    console.log(start_game);
+    document.getElementById("msg").innerHTML = "Hit the 's' key to start.";
+    document.onkeyup = function(event) {
+        start_key = event.key;
+        val_key = event.keyCode;
+        console.log(start_key);
+        if (start_key === 's' && start_game == 0){
+            start_game = 1;
+            cmp_sel();
+            document.getElementById("msg").innerHTML = "Hit a letter key to guess the letter.";
+            console.log(cmp_sel());
+            document.getElementById("wins").innerHTML = psychic_wins;
+            document.getElementById("losses").innerHTML = psychic_losses;
+            document.getElementById("guesses_left").innerHTML = guesses;
+        }
+        else
+        {
+            if(start_game == 1)
+            {
+                console.log(val_key);
+                console.log(ltr_cmp);
+                key_val();
+            }
+        }
+    };
+    </script>
+</body>
+</html>
